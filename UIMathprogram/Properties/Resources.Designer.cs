@@ -83,6 +83,16 @@ namespace UIMathprogram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Galaxy_Amazing_Wallpapers {
+            get {
+                object obj = ResourceManager.GetObject("Galaxy-Amazing-Wallpapers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hb {
             get {
                 object obj = ResourceManager.GetObject("hb", resourceCulture);
@@ -116,6 +126,16 @@ namespace UIMathprogram.Properties {
         internal static System.Drawing.Bitmap photo_1450849608880_6f787542c88a {
             get {
                 object obj = ResourceManager.GetObject("photo-1450849608880-6f787542c88a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preview_colorful_galaxy_view {
+            get {
+                object obj = ResourceManager.GetObject("preview_colorful-galaxy-view", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

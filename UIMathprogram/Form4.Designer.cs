@@ -454,6 +454,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::UIMathprogram.Properties.Resources.preview_colorful_galaxy_view;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1026, 536);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);

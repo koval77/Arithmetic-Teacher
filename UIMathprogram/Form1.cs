@@ -155,5 +155,9 @@ namespace UIMathprogram
             helpform.Show();
         }
 
+        private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

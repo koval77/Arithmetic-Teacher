@@ -224,6 +224,8 @@
     <None Include="Resources\hb.png" />
     <None Include="Resources\Cert.PNG" />
     <None Include="Resources\help.PNG" />
+    <None Include="Resources\preview_colorful-galaxy-view.jpeg" />
+    <None Include="Resources\Galaxy-Amazing-Wallpapers.jpg" />
     <Content Include="students.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

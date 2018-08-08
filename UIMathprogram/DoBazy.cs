@@ -59,14 +59,8 @@ namespace UIMathprogram
                 {
                     logintextBox3.Text = null;
                     passtextBox4.Text = null;
-                    //dataGridView1.DataSource = null;
-                    //studentformathappBindingSource.DataSource = null;
-                    //studentformathappBindingSource.DataSource = database31DataSet1BindingSource;
-                    //dataGridView1.DataSource = studentformathappBindingSource;
                     MessageBox.Show("Record Successfuly Added");
-                    //dataGridView1.Update();
-                    //this.database31DataSet1BindingSource.AddNew();
-                    //this.studentformathappBindingSource.AddNew();
+                    this.Close();
                 }
                 else
                 {

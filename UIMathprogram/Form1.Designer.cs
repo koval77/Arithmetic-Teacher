@@ -315,20 +315,21 @@
             // saveAndExitToolStripMenuItem
             // 
             this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
-            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.saveAndExitToolStripMenuItem.Text = "Pause game";
             // 
             // exitWithoutSavingToolStripMenuItem
             // 
             this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
-            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
             // 
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
+            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -372,7 +373,7 @@
             this.MaximumSize = new System.Drawing.Size(500, 400);
             this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "Form1";
-            this.Text = "Math Learning Program";
+            this.Text = "Math Learning Program Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database31DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).EndInit();
