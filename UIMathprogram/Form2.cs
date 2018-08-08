@@ -66,8 +66,6 @@ namespace UIMathprogram
                 else
                 {
                     pictureBox1.Image = UIMathprogram.Properties.Resources.ab;
-                    MessageBox.Show("Your answers are incorrect", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    pictureBox1.Image = UIMathprogram.Properties.Resources.ab;
                     if (Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text)!= (Convert.ToInt32(res1.Text)))
                         { label8.Text = "≠"; }
                     if (Convert.ToInt32(textBox3.Text) + Convert.ToInt32(textBox4.Text) != (Convert.ToInt32(res2.Text)))
@@ -76,6 +74,7 @@ namespace UIMathprogram
                     { label10.Text = "≠"; }
                     if (Convert.ToInt32(textBox7.Text) + Convert.ToInt32(textBox8.Text) != (Convert.ToInt32(res4.Text)))
                     { label9.Text = "≠"; }
+                    MessageBox.Show("Your answers are incorrect", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
