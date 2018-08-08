@@ -61,7 +61,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAndExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitWithoutSavingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -394,6 +403,70 @@
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1026, 28);
+            this.menuStrip1.TabIndex = 149;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveAndExitToolStripMenuItem,
+            this.exitWithoutSavingToolStripMenuItem,
+            this.exitGameToolStripMenuItem});
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.exitToolStripMenuItem.Text = "Game";
+            // 
+            // saveAndExitToolStripMenuItem
+            // 
+            this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.saveAndExitToolStripMenuItem.Text = "Pause game";
+            // 
+            // exitWithoutSavingToolStripMenuItem
+            // 
+            this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
+            // 
+            // exitGameToolStripMenuItem
+            // 
+            this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitGameToolStripMenuItem.Text = "Exit game";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem,
+            this.aboutToolStripMenuItem1});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.aboutToolStripMenuItem.Text = "Help";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.aboutToolStripMenuItem1.Text = "About";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UIMathprogram.Properties.Resources.how_to_draw_a_spaceship;
@@ -409,6 +482,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1026, 536);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -443,6 +517,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form5";
             this.Text = "Math Application Division";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -484,5 +560,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAndExitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitWithoutSavingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
     }
 }

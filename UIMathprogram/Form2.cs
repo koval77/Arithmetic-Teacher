@@ -259,5 +259,11 @@ namespace UIMathprogram
             res3.Enabled = true;
             res4.Enabled = true;
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Helpform helpform = new Helpform();
+            helpform.Show();
+        }
     }
 }

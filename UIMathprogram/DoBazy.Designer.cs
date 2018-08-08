@@ -29,27 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.database31DataSet1 = new UIMathprogram.Database31DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentformathappBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database31DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentformathappBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.studentformathappTableAdapter = new UIMathprogram.Database31DataSetTableAdapters.StudentformathappTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.passtextBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.logintextBox3 = new System.Windows.Forms.TextBox();
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAndExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitWithoutSavingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.fillByToolStrip.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
@@ -86,11 +98,16 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.loginDataGridViewTextBoxColumn,
+            this.passDataGridViewTextBoxColumn,
+            this.scoreDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.studentformathappBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(432, 41);
             this.dataGridView1.Name = "dataGridView1";
@@ -98,15 +115,45 @@
             this.dataGridView1.Size = new System.Drawing.Size(450, 397);
             this.dataGridView1.TabIndex = 14;
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            // 
+            // passDataGridViewTextBoxColumn
+            // 
+            this.passDataGridViewTextBoxColumn.DataPropertyName = "Pass";
+            this.passDataGridViewTextBoxColumn.HeaderText = "Pass";
+            this.passDataGridViewTextBoxColumn.Name = "passDataGridViewTextBoxColumn";
+            this.passDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // scoreDataGridViewTextBoxColumn
+            // 
+            this.scoreDataGridViewTextBoxColumn.DataPropertyName = "Score";
+            this.scoreDataGridViewTextBoxColumn.HeaderText = "Score";
+            this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
+            // 
             // studentformathappBindingSource
             // 
+            this.studentformathappBindingSource.AllowNew = false;
+            this.studentformathappBindingSource.DataMember = "Studentformathapp";
             this.studentformathappBindingSource.DataSource = this.database31DataSet1BindingSource;
-            this.studentformathappBindingSource.Position = 0;
             // 
             // database31DataSet1BindingSource
             // 
             this.database31DataSet1BindingSource.DataSource = this.database31DataSet1;
             this.database31DataSet1BindingSource.Position = 0;
+            // 
+            // studentformathappBindingSource1
+            // 
+            this.studentformathappBindingSource1.DataSource = this.studentformathappBindingSource;
             // 
             // studentformathappTableAdapter
             // 
@@ -162,46 +209,91 @@
             this.logintextBox3.TabIndex = 19;
             this.logintextBox3.TextChanged += new System.EventHandler(this.logintextBox3_TextChanged);
             // 
-            // fillByToolStrip
+            // menuStrip1
             // 
-            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(955, 27);
-            this.fillByToolStrip.TabIndex = 17;
-            this.fillByToolStrip.Text = "fillByToolStrip";
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(955, 28);
+            this.menuStrip1.TabIndex = 118;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // fillByToolStripButton
+            // exitToolStripMenuItem
             // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
-            this.fillByToolStripButton.Text = "FillBy";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            this.exitToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveAndExitToolStripMenuItem,
+            this.exitWithoutSavingToolStripMenuItem,
+            this.exitGameToolStripMenuItem});
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.exitToolStripMenuItem.Text = "Game";
+            // 
+            // saveAndExitToolStripMenuItem
+            // 
+            this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.saveAndExitToolStripMenuItem.Text = "Pause game";
+            // 
+            // exitWithoutSavingToolStripMenuItem
+            // 
+            this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
+            // 
+            // exitGameToolStripMenuItem
+            // 
+            this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitGameToolStripMenuItem.Text = "Exit game";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem,
+            this.aboutToolStripMenuItem1});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.aboutToolStripMenuItem.Text = "Help";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem1
+            // 
+            this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(125, 26);
+            this.aboutToolStripMenuItem1.Text = "About";
             // 
             // DoBazy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 458);
-            this.Controls.Add(this.fillByToolStrip);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "DoBazy";
-            this.Text = "DoBazy";
+            this.Text = "Registration";
             this.Load += new System.EventHandler(this.DoBazy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,7 +313,18 @@
         private System.Windows.Forms.TextBox logintextBox3;
         private System.Windows.Forms.TextBox passtextBox4;
         public System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStrip fillByToolStrip;
-        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
+        private System.Windows.Forms.BindingSource studentformathappBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scoreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveAndExitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitWithoutSavingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitGameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
     }
 }

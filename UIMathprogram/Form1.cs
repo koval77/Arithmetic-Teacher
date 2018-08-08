@@ -148,5 +148,11 @@ namespace UIMathprogram
             this.studentformathappTableAdapter.Fill(this.database31DataSet.Studentformathapp);
 
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Helpform helpform = new Helpform();
+            helpform.Show();
+        }
     }
 }

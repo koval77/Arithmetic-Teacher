@@ -124,5 +124,11 @@ namespace UIMathprogram
 
             }
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Helpform helpform = new Helpform();
+            helpform.Show();
+        }
     }
 }
