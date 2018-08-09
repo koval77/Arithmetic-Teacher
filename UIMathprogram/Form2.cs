@@ -232,7 +232,7 @@ namespace UIMathprogram
 
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)

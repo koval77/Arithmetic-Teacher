@@ -129,9 +129,9 @@
             this.label4.Font = new System.Drawing.Font("Onyx", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(678, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 45);
+            this.label4.Size = new System.Drawing.Size(86, 45);
             this.label4.TabIndex = 141;
-            this.label4.Text = "Level 1";
+            this.label4.Text = "Level 5";
             // 
             // label14
             // 
@@ -364,7 +364,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(41, 30);
+            this.label1.Location = new System.Drawing.Point(12, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(673, 63);
             this.label1.TabIndex = 117;
@@ -416,8 +416,9 @@
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
+            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 

@@ -130,5 +130,10 @@ namespace UIMathprogram
             Helpform helpform = new Helpform();
             helpform.Show();
         }
+
+        private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

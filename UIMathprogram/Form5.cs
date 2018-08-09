@@ -23,6 +23,11 @@ namespace UIMathprogram
 
         int num1, num2, num3, num4, num5, num6,num7,num8, fix;
 
+        private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Helpform helpform = new Helpform();

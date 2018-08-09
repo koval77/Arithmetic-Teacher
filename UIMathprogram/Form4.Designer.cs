@@ -111,7 +111,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 45);
             this.label4.TabIndex = 167;
-            this.label4.Text = "Level 2";
+            this.label4.Text = "Level 3";
             // 
             // label14
             // 
@@ -343,7 +343,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Viner Hand ITC", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(57, 30);
+            this.label1.Location = new System.Drawing.Point(12, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(673, 63);
             this.label1.TabIndex = 143;
@@ -360,7 +360,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Jokerman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(790, 343);
+            this.label16.Location = new System.Drawing.Point(790, 382);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(55, 43);
             this.label16.TabIndex = 173;
@@ -370,7 +370,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Jokerman", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(706, 300);
+            this.label15.Location = new System.Drawing.Point(706, 339);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(308, 43);
             this.label15.TabIndex = 172;
@@ -415,8 +415,9 @@
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
+            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -443,7 +444,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UIMathprogram.Properties.Resources.how_to_draw_a_spaceship;
-            this.pictureBox1.Location = new System.Drawing.Point(837, 164);
+            this.pictureBox1.Location = new System.Drawing.Point(851, 174);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

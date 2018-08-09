@@ -29,19 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.database31DataSet1 = new UIMathprogram.Database31DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentformathappBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database31DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studentformathappBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentformathappTableAdapter = new UIMathprogram.Database31DataSetTableAdapters.StudentformathappTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.passtextBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,13 +48,20 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).BeginInit();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.database31DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database31DataSet1 = new UIMathprogram.Database31DataSet();
+            this.studentformathappTableAdapter = new UIMathprogram.Database31DataSetTableAdapters.StudentformathappTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -90,16 +90,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // database31DataSet1
-            // 
-            this.database31DataSet1.DataSetName = "Database31DataSet";
-            this.database31DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -115,49 +110,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(450, 397);
             this.dataGridView1.TabIndex = 14;
             // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // loginDataGridViewTextBoxColumn
-            // 
-            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
-            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
-            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
-            // 
-            // passDataGridViewTextBoxColumn
-            // 
-            this.passDataGridViewTextBoxColumn.DataPropertyName = "Pass";
-            this.passDataGridViewTextBoxColumn.HeaderText = "Pass";
-            this.passDataGridViewTextBoxColumn.Name = "passDataGridViewTextBoxColumn";
-            this.passDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // scoreDataGridViewTextBoxColumn
-            // 
-            this.scoreDataGridViewTextBoxColumn.DataPropertyName = "Score";
-            this.scoreDataGridViewTextBoxColumn.HeaderText = "Score";
-            this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
-            // 
             // studentformathappBindingSource
             // 
             this.studentformathappBindingSource.AllowNew = false;
             this.studentformathappBindingSource.DataMember = "Studentformathapp";
             this.studentformathappBindingSource.DataSource = this.database31DataSet1BindingSource;
             // 
-            // database31DataSet1BindingSource
-            // 
-            this.database31DataSet1BindingSource.DataSource = this.database31DataSet1;
-            this.database31DataSet1BindingSource.Position = 0;
-            // 
             // studentformathappBindingSource1
             // 
             this.studentformathappBindingSource1.DataSource = this.studentformathappBindingSource;
-            // 
-            // studentformathappTableAdapter
-            // 
-            this.studentformathappTableAdapter.ClearBeforeFill = true;
             // 
             // groupBox1
             // 
@@ -250,6 +211,7 @@
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
             this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
+            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -272,6 +234,45 @@
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            // 
+            // passDataGridViewTextBoxColumn
+            // 
+            this.passDataGridViewTextBoxColumn.DataPropertyName = "Pass";
+            this.passDataGridViewTextBoxColumn.HeaderText = "Pass";
+            this.passDataGridViewTextBoxColumn.Name = "passDataGridViewTextBoxColumn";
+            this.passDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // scoreDataGridViewTextBoxColumn
+            // 
+            this.scoreDataGridViewTextBoxColumn.DataPropertyName = "Score";
+            this.scoreDataGridViewTextBoxColumn.HeaderText = "Score";
+            this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
+            // 
+            // database31DataSet1BindingSource
+            // 
+            this.database31DataSet1BindingSource.DataSource = this.database31DataSet1;
+            this.database31DataSet1BindingSource.Position = 0;
+            // 
+            // database31DataSet1
+            // 
+            this.database31DataSet1.DataSetName = "Database31DataSet";
+            this.database31DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentformathappTableAdapter
+            // 
+            this.studentformathappTableAdapter.ClearBeforeFill = true;
+            // 
             // DoBazy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -285,15 +286,15 @@
             this.Name = "DoBazy";
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.DoBazy_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database31DataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
