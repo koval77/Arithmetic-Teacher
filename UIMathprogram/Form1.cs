@@ -14,34 +14,29 @@ using System.Drawing.Drawing2D;
 
 namespace UIMathprogram
 {
-   
-
     public partial class Form1 : Form
     {
         public static string studname = "";
-        public OleDbConnection mycon = new OleDbConnection(); 
+        public OleDbConnection mycon = new OleDbConnection();
         public Form1()
         {
             InitializeComponent();
-           mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
-            
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
+
         }
-
-    
-
         public void button1_Click(object sender, EventArgs e)
         {
             mycon.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = mycon;
-            command.CommandText="select * from Studentformathapp where Login='"+textBox1.Text+"'and Pass='"+textBox2.Text+"'";
-            OleDbDataReader reader= command.ExecuteReader();
+            command.CommandText = "select * from Studentformathapp where Login='" + textBox1.Text + "'and Pass='" + textBox2.Text + "'";
+            OleDbDataReader reader = command.ExecuteReader();
             int count = 0;
             while (reader.Read())
             {
                 count = count + 1;
             }
-            if(count==1)
+            if (count == 1)
             {
                 MessageBox.Show("Login and Password are correct!");
                 studname = textBox1.Text;
@@ -50,7 +45,7 @@ namespace UIMathprogram
                 this.Hide();
                 frm2.Show();
             }
-            else if(count>1)
+            else if (count > 1)
             {
                 MessageBox.Show("Login and password are duplicated");
             }
@@ -59,34 +54,6 @@ namespace UIMathprogram
                 MessageBox.Show("Login or password is not correct");
             }
             mycon.Close();
-            //OleDbCommand mycommand = new OleDbCommand("SELECT * FROM Studentformathapp WHERE Login='Kate';",mycon);
-            //mycommand.Connection = mycon;
-            ////mycommand.CommandText = "select Password from Studentformathapp where Login='Kate'";
-            //mycommand.CommandText = "SELECT * FROM Studentformathapp WHERE Login='Kate';";
-            //OleDbDataReader Reader= mycommand.ExecuteReader();
-            //OleDbDataAdapter adapter = new OleDbDataAdapter(mycommand);
-            //Console.WriteLine(mycommand.ToString());
-            //Console.WriteLine(Reader.ToString());
-            //Database31DataSet pers = new Database31DataSet();
-            //Console.WriteLine(pers.Tables[0].Columns[0].);
-            ////MessageBox.Show(x);
-            //mycon.Close();
-            //textBox1.Text = loginTextBox.Text;
-            //if ((textBox1.Text == "admin") & (textBox2.Text == "admin"))
-            //{
-            //    MessageBox.Show("ok,go in");
-            //    Form1 frm1 = new Form1();
-            //    Form2 frm = new Form2();
-            //    frm1.Close();
-            //    frm.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No, wrong password");
-
-
-            //}
-            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -135,18 +102,16 @@ namespace UIMathprogram
         {
             using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
                                                                        Color.FromArgb(6, 160, 174),
-                                                                       Color.FromArgb(66,12,17),
+                                                                       Color.FromArgb(66, 12, 17),
                                                                        9F))
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database31DataSet.Studentformathapp' table. You can move, or remove it, as needed.
             this.studentformathappTableAdapter.Fill(this.database31DataSet.Studentformathapp);
-
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -157,7 +122,8 @@ namespace UIMathprogram
 
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
