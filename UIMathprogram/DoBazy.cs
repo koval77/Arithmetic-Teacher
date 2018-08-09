@@ -67,18 +67,6 @@ namespace UIMathprogram
                     MessageBox.Show("Record Fail to Added");
                 }
                 mycon.Close();
-                //studentformathappTableAdapter.InsertQuerymoja(loginTextBox.Text, passwordTextBox.Text, 0);
-                //studentformathappTableAdapter.InsertQuerymoja(loginTextBox.Text,passwordTextBox.Text,0);
-                //studentformathappTableAdapter.Insert("xxx", "xxxx", 3);
-                //studentformathappBindingSource.EndEdit();
-                //studentformathappTableAdapter.Update(this.database31DataSet);
-                //Console.WriteLine(mycon.ConnectionString.ToString());
-                //Console.WriteLine(mycon.Container.ToString());
-                //Console.WriteLine(mycon.DataSource.ToString());
-                //Console.WriteLine(mycon.Database.ToString());
-                //Console.WriteLine(mycon.Site);
-                //mycon.Close();
-
             }
             catch (Exception ex)
             {

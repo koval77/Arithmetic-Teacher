@@ -18,35 +18,25 @@ namespace UIMathprogram
         int timeLeft = 30;
         string studname1 = Form1.studname;
         
-
         public Form2()
         {
             InitializeComponent();
             label16.Text = studname1;
             mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  D:\UIMathprogram-Playingwithdatabases\UIMathprogram\Database31.mdb";
-
-
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
            
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
         public void button2_Click(object sender, EventArgs e)
         {
             Form3 frm3 = new Form3();
             Form2 frm2 = new Form2();
-            //int number1, number2, result;
-            //number1 = Convert.ToInt32(textBox1.Text);
-            //number2 = Convert.ToInt32(textBox2.Text);
-            //result = number1 + number2;
-            //textBox3.Text = result.ToString();
             try
             {
                 if ((Convert.ToInt32(res1.Text) == Convert.ToInt32(textBox1.Text) + Convert.ToInt32(textBox2.Text)) &&
@@ -56,12 +46,10 @@ namespace UIMathprogram
                 {
                     pictureBox1.Image = UIMathprogram.Properties.Resources.hb;
                     MessageBox.Show("All your answers are correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    timer1.Enabled = false;
-                    
+                    timer1.Enabled = false;                   
                     this.Hide();
                     frm3.Show();
-                    frm2.Dispose();
-                   
+                    frm2.Dispose();                 
                 }
                 else
                 {
@@ -77,18 +65,15 @@ namespace UIMathprogram
                     MessageBox.Show("Your answers are incorrect", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
             catch
             {
                 MessageBox.Show("Something went wrong. Remember that you can enter numbers only!", "Errot", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
            
         }
-
         public void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = UIMathprogram.Properties.Resources.how_to_draw_a_spaceship;
@@ -97,8 +82,7 @@ namespace UIMathprogram
             res1.Text = "";
             res2.Text="";
             res3.Text="";
-            res4.Text = "";
-                
+            res4.Text = "";               
             num1 = random.Next(1, 10);
             textBox1.Text = num1.ToString();
             num2 = random.Next(1, 10);
@@ -115,18 +99,14 @@ namespace UIMathprogram
             textBox6.Text=num6.ToString();
             textBox7.Text=num7.ToString();
             textBox8.Text=num8.ToString();
-
             label8.Text = "=";
             label9.Text="=";
             label10.Text="=";
             label11.Text = "=";
-
             timeLeft = 120;
             timeLabel.Text = "120 seconds";
             timer1.Start();
-            isgamestarted = "yes";
-
-         
+            isgamestarted = "yes";      
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -141,30 +121,18 @@ namespace UIMathprogram
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            /*   n1.Value--;
-                   //Form2 frm22 = new Form2();
-                   if (n1.Value == 0)
-                   {
-                       MessageBox.Show("Time finished. Do it again!");
-                   timer1.Stop();
-
-
-                    }*/
-            //n1.Value--;
             timer1.Enabled = false;
             if (timeLeft > 0&&isgamestarted=="yes") {
                 timer1.Enabled = true;
                 timeLeft = timeLeft - 1;
-                timeLabel.Text = timeLeft + "seconds";
+                timeLabel.Text = timeLeft + " seconds";
             }
             else if (isgamestarted == "no") { timer1.Stop(); }
             else
             {
                 timer1.Stop();
                 timeLabel.Text = "Time is up!";
-                MessageBox.Show("You didnt finish in time. Try again");
-                
+                MessageBox.Show("You didnt finish in time. Try again","Try again",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);        
             }
         }
 

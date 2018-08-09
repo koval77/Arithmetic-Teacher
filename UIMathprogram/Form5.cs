@@ -43,7 +43,7 @@ namespace UIMathprogram
         {
             pictureBox1.Image = UIMathprogram.Properties.Resources.how_to_draw_a_spaceship;
             System.Random random = new System.Random();
-            int rand1 = random.Next(1, 10); // from 1 to 100
+            int rand1 = random.Next(1, 10); // from 1 to 10
             int rand2 = random.Next(1, 10);
             int rand3 = random.Next(1, 10);
             int rand4 = random.Next(1, 10);
@@ -84,11 +84,6 @@ namespace UIMathprogram
         {
             Certificate cert = new Certificate();
             Form5 frm5 = new Form5();
-            //int number1, number2, result;
-            //number1 = Convert.ToInt32(textBox1.Text);
-            //number2 = Convert.ToInt32(textBox2.Text);
-            //result = number1 + number2;
-            //textBox3.Text = result.ToString();
             try
             {
                 if ((Convert.ToInt32(res1.Text) == Convert.ToInt32(textBox1.Text) / Convert.ToInt32(textBox2.Text)) &&

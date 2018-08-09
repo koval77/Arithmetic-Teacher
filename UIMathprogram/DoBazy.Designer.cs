@@ -48,13 +48,13 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.database31DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database31DataSet1 = new UIMathprogram.Database31DataSet();
+            this.studentformathappTableAdapter = new UIMathprogram.Database31DataSetTableAdapters.StudentformathappTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.scoreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.database31DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database31DataSet1 = new UIMathprogram.Database31DataSet();
-            this.studentformathappTableAdapter = new UIMathprogram.Database31DataSetTableAdapters.StudentformathappTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentformathappBindingSource1)).BeginInit();
@@ -234,6 +234,20 @@
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem1.Text = "About";
             // 
+            // database31DataSet1BindingSource
+            // 
+            this.database31DataSet1BindingSource.DataSource = this.database31DataSet1;
+            this.database31DataSet1BindingSource.Position = 0;
+            // 
+            // database31DataSet1
+            // 
+            this.database31DataSet1.DataSetName = "Database31DataSet";
+            this.database31DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentformathappTableAdapter
+            // 
+            this.studentformathappTableAdapter.ClearBeforeFill = true;
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -258,20 +272,6 @@
             this.scoreDataGridViewTextBoxColumn.DataPropertyName = "Score";
             this.scoreDataGridViewTextBoxColumn.HeaderText = "Score";
             this.scoreDataGridViewTextBoxColumn.Name = "scoreDataGridViewTextBoxColumn";
-            // 
-            // database31DataSet1BindingSource
-            // 
-            this.database31DataSet1BindingSource.DataSource = this.database31DataSet1;
-            this.database31DataSet1BindingSource.Position = 0;
-            // 
-            // database31DataSet1
-            // 
-            this.database31DataSet1.DataSetName = "Database31DataSet";
-            this.database31DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentformathappTableAdapter
-            // 
-            this.studentformathappTableAdapter.ClearBeforeFill = true;
             // 
             // DoBazy
             // 
@@ -315,10 +315,6 @@
         private System.Windows.Forms.TextBox passtextBox4;
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource studentformathappBindingSource1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scoreDataGridViewTextBoxColumn;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAndExitToolStripMenuItem;
@@ -327,5 +323,9 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn passDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn scoreDataGridViewTextBoxColumn;
     }
 }
