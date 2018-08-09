@@ -60,7 +60,7 @@ namespace UIMathprogram
                     logintextBox3.Text = null;
                     passtextBox4.Text = null;
                     MessageBox.Show("Record Successfuly Added");
-                    this.Close();
+                   // this.Close();
                 }
                 else
                 {
@@ -82,11 +82,22 @@ namespace UIMathprogram
 
         private void button2_Click(object sender, EventArgs e)
         {
-            dataGridView1.BeginEdit(true);
-            studentformathappBindingSource.ResetBindings(true);
-            dataGridView1.DataSource = studentformathappBindingSource;
+            dataGridView1.DataSource = null;
+            dataGridView1.Rows.Clear();
             dataGridView1.Refresh();
-            dataGridView1.Update();
+
+            OleDbDataAdapter dAdapter = new OleDbDataAdapter("select * from Studentformathapp", mycon);
+            OleDbCommandBuilder cBuilder = new OleDbCommandBuilder(dAdapter);
+
+            DataTable dataTable = new DataTable();
+            DataSet ds = new DataSet();
+
+            dAdapter.Fill(dataTable);
+
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                dataGridView1.Rows.Add(dataTable.Rows[i][0], dataTable.Rows[i][1], dataTable.Rows[i][2], dataTable.Rows[i][3]);
+            }
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
