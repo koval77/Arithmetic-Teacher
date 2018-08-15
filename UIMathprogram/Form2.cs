@@ -85,13 +85,13 @@ namespace UIMathprogram
             res4.Text = "";               
             num1 = random.Next(1, 10);
             textBox1.Text = num1.ToString();
-            num2 = random.Next(1, 10);
-            num3 = random.Next(1, 10);
-            num4 = random.Next(1, 10);
-            num5 = random.Next(1, 10);
-            num6 = random.Next(1, 10);
-            num7 = random.Next(1, 10);
-            num8 = random.Next(1, 10);
+            num2 = random.Next(1, Form1.limit);
+            num3 = random.Next(1, Form1.limit);
+            num4 = random.Next(1, Form1.limit);
+            num5 = random.Next(1, Form1.limit);
+            num6 = random.Next(1, Form1.limit);
+            num7 = random.Next(1, Form1.limit);
+            num8 = random.Next(1, Form1.limit);
             textBox2.Text = num2.ToString();
             textBox3.Text=num3.ToString();
             textBox4.Text=num4.ToString();
@@ -232,5 +232,23 @@ namespace UIMathprogram
             Helpform helpform = new Helpform();
             helpform.Show();
         }
+
+        private void advancedLevelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1.limit = 100;
+            advancedLevelToolStripMenuItem.Checked = true;
+            beginnerLevelToolStripMenuItem.Checked = false;
+            label2.Text = "Advanced";
+        }
+
+        private void beginnerLevelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1.limit = 10;
+            advancedLevelToolStripMenuItem.Checked = false;
+            beginnerLevelToolStripMenuItem.Checked = true;
+            label2.Text = "Beginner";
+           // Form1.Addscore();
+        }
+        
     }
 }

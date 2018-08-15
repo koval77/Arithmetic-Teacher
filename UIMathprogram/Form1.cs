@@ -17,6 +17,8 @@ namespace UIMathprogram
     public partial class Form1 : Form
     {
         public static string studname = "";
+        public static int limit = 10;
+        int limitold = 10;
         public OleDbConnection mycon = new OleDbConnection();
         public Form1()
         {
@@ -125,5 +127,9 @@ namespace UIMathprogram
             //this.Close();
             System.Windows.Forms.Application.Exit();
         }
+        // public static void Addscore()
+        //{
+        //    Console.WriteLine("");
+        //}
     }
 }

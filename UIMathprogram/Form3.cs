@@ -51,16 +51,15 @@ namespace UIMathprogram
             res2.Text = "";
             res3.Text = "";
             res4.Text = "";
-
-            num1 = random.Next(1, 10);
-            textBox1.Text = num1.ToString();
-            num2 = random.Next(1, 10);
+            num1 = random.Next(1, 10);          
+            num2 = random.Next(1, num1);
             num3 = random.Next(1, 10);
-            num4 = random.Next(1, 10);
+            num4 = random.Next(1, num3);
             num5 = random.Next(1, 10);
-            num6 = random.Next(1, 10);
+            num6 = random.Next(1, num5);
             num7 = random.Next(1, 10);
-            num8 = random.Next(1, 10);
+            num8 = random.Next(1, num7);
+            textBox1.Text = num1.ToString();
             textBox2.Text = num2.ToString();
             textBox3.Text = num3.ToString();
             textBox4.Text = num4.ToString();
@@ -72,7 +71,6 @@ namespace UIMathprogram
             label9.Text = "=";
             label10.Text = "=";
             label11.Text = "=";
-
             timeLeft = 120;
             timeLabel.Text = "120 seconds";
             timer1.Start();
@@ -101,7 +99,6 @@ namespace UIMathprogram
                     this.Hide();
                     frm4.Show();
                     frm3.Dispose();
-
                 }
                 else
                 {
@@ -117,7 +114,6 @@ namespace UIMathprogram
                     MessageBox.Show("Your answers are incorrect", "Result", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
             catch
             {
                 MessageBox.Show("Something went wrong. Remember that you can enter numbers only!", "Errot", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -139,7 +135,6 @@ namespace UIMathprogram
                 timer1.Stop();
                 timeLabel.Text = "Time is up!";
                 MessageBox.Show("You didnt finish in time. Try again");
-
             }
         }
 

@@ -15,6 +15,7 @@ namespace UIMathprogram
     {
         string stname = Form1.studname;
         private Button printButton = new Button();
+        private PrintDocument printDocument1 = new PrintDocument();
 
         public Certificate()
         {
@@ -22,9 +23,9 @@ namespace UIMathprogram
             textBox2.Text = DateTime.UtcNow.ToString();
             textBox1.Text = stname;
             printButton.Text = "Print Form";
-            //printButton.Click += new EventHandler(printToolStripMenuItem.Click);
-            //printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            //this.Controls.Add(printButton);
+            printButton.Click += new EventHandler(printButton_Click);
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            this.Controls.Add(printButton);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -37,9 +38,16 @@ namespace UIMathprogram
 
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void printDocument1_PrintPage(System.Object sender,
+         System.Drawing.Printing.PrintPageEventArgs e)
         {
+            e.Graphics.DrawImage(memoryImage, 0, 0);
+        }
 
+        void printButton_Click(object sender, EventArgs e)
+        {
+            //CaptureScreen();
+            //printDocument1.Print();
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +64,11 @@ namespace UIMathprogram
             memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
             Graphics memoryGraphics = Graphics.FromImage(memoryImage);
             memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+        }
+
+        private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

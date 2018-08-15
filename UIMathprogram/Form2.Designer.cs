@@ -65,10 +65,13 @@
             this.saveAndExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitWithoutSavingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beginnerLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.advancedLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -405,7 +408,9 @@
             this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveAndExitToolStripMenuItem,
             this.exitWithoutSavingToolStripMenuItem,
-            this.exitGameToolStripMenuItem});
+            this.exitGameToolStripMenuItem,
+            this.beginnerLevelToolStripMenuItem,
+            this.advancedLevelToolStripMenuItem});
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.exitToolStripMenuItem.Text = "Game";
@@ -414,23 +419,40 @@
             // saveAndExitToolStripMenuItem
             // 
             this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
-            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.saveAndExitToolStripMenuItem.Text = "Pause game";
             this.saveAndExitToolStripMenuItem.Click += new System.EventHandler(this.saveAndExitToolStripMenuItem_Click);
             // 
             // exitWithoutSavingToolStripMenuItem
             // 
             this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
-            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
             this.exitWithoutSavingToolStripMenuItem.Click += new System.EventHandler(this.exitWithoutSavingToolStripMenuItem_Click);
             // 
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
             this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
+            // 
+            // beginnerLevelToolStripMenuItem
+            // 
+            this.beginnerLevelToolStripMenuItem.Checked = true;
+            this.beginnerLevelToolStripMenuItem.CheckOnClick = true;
+            this.beginnerLevelToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.beginnerLevelToolStripMenuItem.Name = "beginnerLevelToolStripMenuItem";
+            this.beginnerLevelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.beginnerLevelToolStripMenuItem.Text = "Beginner level";
+            this.beginnerLevelToolStripMenuItem.Click += new System.EventHandler(this.beginnerLevelToolStripMenuItem_Click);
+            // 
+            // advancedLevelToolStripMenuItem
+            // 
+            this.advancedLevelToolStripMenuItem.Name = "advancedLevelToolStripMenuItem";
+            this.advancedLevelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.advancedLevelToolStripMenuItem.Text = "Advanced level";
+            this.advancedLevelToolStripMenuItem.Click += new System.EventHandler(this.advancedLevelToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -466,6 +488,16 @@
             this.pictureBox1.TabIndex = 118;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Onyx", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(691, 230);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 45);
+            this.label2.TabIndex = 119;
+            this.label2.Text = "Beginner";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -473,6 +505,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1026, 536);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
@@ -557,5 +590,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem beginnerLevelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem advancedLevelToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
     }
 }
