@@ -64,7 +64,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAndExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitWithoutSavingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beginnerLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +71,7 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -408,9 +408,9 @@
             this.exitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveAndExitToolStripMenuItem,
             this.exitWithoutSavingToolStripMenuItem,
-            this.exitGameToolStripMenuItem,
             this.beginnerLevelToolStripMenuItem,
-            this.advancedLevelToolStripMenuItem});
+            this.advancedLevelToolStripMenuItem,
+            this.exitToolStripMenuItem1});
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.exitToolStripMenuItem.Text = "Game";
@@ -429,13 +429,6 @@
             this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
             this.exitWithoutSavingToolStripMenuItem.Click += new System.EventHandler(this.exitWithoutSavingToolStripMenuItem_Click);
-            // 
-            // exitGameToolStripMenuItem
-            // 
-            this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.exitGameToolStripMenuItem.Text = "Exit game";
-            this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
             // beginnerLevelToolStripMenuItem
             // 
@@ -497,6 +490,13 @@
             this.label2.Size = new System.Drawing.Size(107, 45);
             this.label2.TabIndex = 119;
             this.label2.Text = "Beginner";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // Form2
             // 
@@ -586,12 +586,12 @@
         private System.Windows.Forms.ToolStripMenuItem saveAndExitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitWithoutSavingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem beginnerLevelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advancedLevelToolStripMenuItem;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
     }
 }

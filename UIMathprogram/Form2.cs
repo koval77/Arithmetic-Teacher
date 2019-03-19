@@ -249,6 +249,10 @@ namespace UIMathprogram
             label2.Text = "Beginner";
            // Form1.Addscore();
         }
-        
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
