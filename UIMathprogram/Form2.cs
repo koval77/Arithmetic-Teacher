@@ -22,7 +22,16 @@ namespace UIMathprogram
         {
             InitializeComponent();
             label16.Text = studname1;
-            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  D:\UIMathprogram-Playingwithdatabases\UIMathprogram\Database31.mdb";
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
+        }
+
+        public void addingScore(int points)
+        {
+            mycon.Open();
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = mycon;
+            command.CommandText = "";
+            mycon.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
