@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace UIMathprogram
 {
     public partial class Form4 : Form
     {
+        public OleDbConnection mycon = new OleDbConnection();
         string isgamestarted = "no";
         int timeLeft = 30;
 
@@ -19,6 +21,17 @@ namespace UIMathprogram
         {
             InitializeComponent();
             label16.Text = Form1.studname;
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=studentDetails1.mdb";
+        }
+
+        public void addingScore(int points)
+        {
+            mycon.Open();
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = mycon;
+            command.CommandText = "UPDATE Studentformathapp SET Score='75' WHERE Login=('"+Form1.studname+"')";
+            command.ExecuteNonQuery();
+            mycon.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -79,6 +92,7 @@ namespace UIMathprogram
                     {
                         pictureBox1.Image = UIMathprogram.Properties.Resources.hb;
                         MessageBox.Show("Your answers are correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        addingScore(1);
                         timer1.Enabled = false;
                         this.Hide();
                         frm5.Show();
