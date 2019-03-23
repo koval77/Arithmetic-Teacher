@@ -138,7 +138,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(183, 66);
             this.button3.TabIndex = 6;
-            this.button3.Text = "Play as guest";
+            this.button3.Text = "Play as a guest";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -315,19 +315,19 @@
             // saveAndExitToolStripMenuItem
             // 
             this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
-            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.saveAndExitToolStripMenuItem.Text = "Pause game";
             // 
             // exitWithoutSavingToolStripMenuItem
             // 
             this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
-            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
             // 
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
             this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 

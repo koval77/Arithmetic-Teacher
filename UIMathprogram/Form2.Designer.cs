@@ -66,12 +66,12 @@
             this.exitWithoutSavingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beginnerLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advancedLevelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -132,7 +132,7 @@
             this.button1.Size = new System.Drawing.Size(388, 55);
             this.button1.TabIndex = 6;
             this.button1.TabStop = false;
-            this.button1.Text = "Get Question";
+            this.button1.Text = "Get a Question";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -142,10 +142,10 @@
             this.button2.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(477, 452);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(319, 55);
+            this.button2.Size = new System.Drawing.Size(404, 55);
             this.button2.TabIndex = 7;
             this.button2.TabStop = false;
-            this.button2.Text = "Check Answer";
+            this.button2.Text = "Check the Answer";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -419,14 +419,14 @@
             // saveAndExitToolStripMenuItem
             // 
             this.saveAndExitToolStripMenuItem.Name = "saveAndExitToolStripMenuItem";
-            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.saveAndExitToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.saveAndExitToolStripMenuItem.Text = "Pause game";
             this.saveAndExitToolStripMenuItem.Click += new System.EventHandler(this.saveAndExitToolStripMenuItem_Click);
             // 
             // exitWithoutSavingToolStripMenuItem
             // 
             this.exitWithoutSavingToolStripMenuItem.Name = "exitWithoutSavingToolStripMenuItem";
-            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitWithoutSavingToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.exitWithoutSavingToolStripMenuItem.Text = "Resume game";
             this.exitWithoutSavingToolStripMenuItem.Click += new System.EventHandler(this.exitWithoutSavingToolStripMenuItem_Click);
             // 
@@ -436,16 +436,23 @@
             this.beginnerLevelToolStripMenuItem.CheckOnClick = true;
             this.beginnerLevelToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.beginnerLevelToolStripMenuItem.Name = "beginnerLevelToolStripMenuItem";
-            this.beginnerLevelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.beginnerLevelToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.beginnerLevelToolStripMenuItem.Text = "Beginner level";
             this.beginnerLevelToolStripMenuItem.Click += new System.EventHandler(this.beginnerLevelToolStripMenuItem_Click);
             // 
             // advancedLevelToolStripMenuItem
             // 
             this.advancedLevelToolStripMenuItem.Name = "advancedLevelToolStripMenuItem";
-            this.advancedLevelToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.advancedLevelToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.advancedLevelToolStripMenuItem.Text = "Advanced level";
             this.advancedLevelToolStripMenuItem.Click += new System.EventHandler(this.advancedLevelToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(185, 26);
+            this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -490,13 +497,6 @@
             this.label2.Size = new System.Drawing.Size(107, 45);
             this.label2.TabIndex = 119;
             this.label2.Text = "Beginner";
-            // 
-            // exitToolStripMenuItem1
-            // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
-            this.exitToolStripMenuItem1.Text = "Exit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // Form2
             // 

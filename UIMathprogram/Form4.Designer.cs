@@ -286,10 +286,10 @@
             this.button2.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(480, 451);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(319, 55);
+            this.button2.Size = new System.Drawing.Size(404, 55);
             this.button2.TabIndex = 150;
             this.button2.TabStop = false;
-            this.button2.Text = "Check Answer";
+            this.button2.Text = "Check the Answer";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -302,7 +302,7 @@
             this.button1.Size = new System.Drawing.Size(388, 55);
             this.button1.TabIndex = 149;
             this.button1.TabStop = false;
-            this.button1.Text = "Get Question";
+            this.button1.Text = "Get a Question";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -415,7 +415,7 @@
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.exitGameToolStripMenuItem.Text = "Exit game";
             this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.exitGameToolStripMenuItem_Click);
             // 
