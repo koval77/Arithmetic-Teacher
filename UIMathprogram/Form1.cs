@@ -23,7 +23,7 @@ namespace UIMathprogram
         public Form1()
         {
             InitializeComponent();
-            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=studentDetails1.mdb";
 
         }
         public void button1_Click(object sender, EventArgs e)

@@ -20,7 +20,7 @@ namespace UIMathprogram
         public DoBazy()
         {
             InitializeComponent();
-            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=studentDetails1.mdb";
         }
 
         private void DoBazy_Load(object sender, EventArgs e)
@@ -116,6 +116,11 @@ namespace UIMathprogram
         private void exitGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
+        }
+
+        private void studentformathappBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

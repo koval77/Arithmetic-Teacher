@@ -22,7 +22,7 @@ namespace UIMathprogram
         {
             InitializeComponent();
             label16.Text = studname1;
-            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\UIMathprogram2-Playingwithdatabases\UIMathprogram\Database31.mdb";
+            mycon.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=studentDetails1.mdb";
         }
 
         public void addingScore(int points)
@@ -30,7 +30,8 @@ namespace UIMathprogram
             mycon.Open();
             OleDbCommand command = new OleDbCommand();
             command.Connection = mycon;
-            command.CommandText = "";
+            command.CommandText = "UPDATE Studentformathapp SET Score='25' WHERE Login=('"+studname1+"')";
+            command.ExecuteNonQuery();
             mycon.Close();
         }
 
@@ -55,6 +56,7 @@ namespace UIMathprogram
                 {
                     pictureBox1.Image = UIMathprogram.Properties.Resources.hb;
                     MessageBox.Show("All your answers are correct!!!", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    addingScore(1);
                     timer1.Enabled = false;                   
                     this.Hide();
                     frm3.Show();
