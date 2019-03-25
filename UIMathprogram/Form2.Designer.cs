@@ -142,7 +142,7 @@
             this.button2.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(477, 452);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(404, 55);
+            this.button2.Size = new System.Drawing.Size(461, 55);
             this.button2.TabIndex = 7;
             this.button2.TabStop = false;
             this.button2.Text = "Check the Answer";
@@ -539,7 +539,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
-            this.Text = "Math Application Addition";
+            this.Text = "Arithmetic Teacher Addition";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

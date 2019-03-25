@@ -273,7 +273,7 @@
             this.button2.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(456, 457);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(398, 55);
+            this.button2.Size = new System.Drawing.Size(461, 55);
             this.button2.TabIndex = 121;
             this.button2.TabStop = false;
             this.button2.Text = "Check the Answer";
@@ -492,7 +492,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form3";
-            this.Text = "Math Application Substraction";
+            this.Text = "Arithmetic Teacher Substraction";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);

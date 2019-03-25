@@ -307,7 +307,7 @@
             this.button2.Font = new System.Drawing.Font("Stencil", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(464, 451);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(398, 55);
+            this.button2.Size = new System.Drawing.Size(461, 55);
             this.button2.TabIndex = 124;
             this.button2.TabStop = false;
             this.button2.Text = "Check the Answer";
@@ -491,7 +491,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form5";
-            this.Text = "Math Application Division";
+            this.Text = "Arithmetic Teacher Division";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
