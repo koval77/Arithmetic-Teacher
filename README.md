@@ -11,6 +11,6 @@ This program is a simple mathematics quiz for children and it aims to teach basi
 
 ## Screnshots:
 
-![asd](ar1.jpg)
+![Registering](Ar1.JPG)
 ![asddd](Art2.jpg)
 ![sfd](Art3.jpg)
