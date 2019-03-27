@@ -3,6 +3,7 @@ This program is a questions - answers quiz for children and it teaches basic ari
 ## Main features:
 - 4 basic arithmetic operation.
 - 2 diffuculty levels.
+- Registering and logging students.
 - Points System.
 - Timer
 - External Access database that could be used for teachers to access and modify.
