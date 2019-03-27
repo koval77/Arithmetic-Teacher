@@ -9,4 +9,8 @@ This program is a simple mathematics quiz for children and it aims to teach basi
 - External Access database that could be used for teachers to access and modify.
 - Option to print "Certificate" or save it as PDF file after accomplishing the quiz.
 
+## Screnshots:
 
+![asd](ar1.jpg)
+![asddd](Art2.jpg)
+![sfd](Art3.jpg)
